@@ -2,7 +2,7 @@ NetherRescue 0.1
 
 A simple craft bukkit mod that checks for player entities above the top nether bedrock layer (y >= 128 is default) and moves them to a valid location if they are. 
 
-Also allows for the process to be reversed for selected users. These users become 'jailed' above the nether. Note after the build height was increased from 128 it is now possible to build on top of the nether.
+Also allows for the process to be reversed for selected users. these users become 'jailed' above the nether. Note after the build height was increased from 128 it is now possible to build on top of the nether.
 
 Contains 5 commands with configurable permissions.
 
