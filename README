@@ -1,0 +1,20 @@
+NetherRescue 0.1
+
+A simple craft bukkit mod that checks for player entities above the top nether bedrock layer (y >= 128 is default) and moves them to a valid location if they are. 
+
+Also allows for the process to be reversed for selected users. these users become 'jailed' above the nether. Note after the build height was increased from 128 it is now possible to build on top of the nether.
+
+Contains 5 commands with configurable permissions.
+
+- NR-list-inmates: Lists the players who are jailed.
+- NR-toggle-jail-state: Toggle the jail state of a user.
+- NR-set-rescue-point: Set the position of the rescue point (the location where a player is teleported if they get stuck above the nether).
+- NR-set-jail-point: Set the position of the jail point (the location where a player is teleported if they are jailed or if they break out of the jail).
+- NR-list-worlds:Lists the set of available worlds. Useful for finding valid arguments when setting points.
+
+Note that there are no checks on locations so it is up to the admin to set the locations somewhere logical.
+
+Default jail point is in 'world_nether' at 0,130,0. 
+Default rescue point is in 'world' at 0,65,0.
+
+The position of every player is checked regularly (default = 100 ticks) to ensure logical consistency.
